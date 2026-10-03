@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Corporate proxy CA bundle (machine-specific, not for git)
+.certs/
+
+# IDE
+.idea/
