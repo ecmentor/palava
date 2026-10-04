@@ -57,24 +57,24 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="sm:hidden pb-4 flex flex-col gap-3">
+          <div className="sm:hidden pb-4 pt-3 flex flex-col items-center gap-3">
             <Link
               href="/about"
-              className="text-sm text-gray-700 hover:text-gray-900 py-1"
+              className="w-full text-center text-sm text-gray-700 hover:text-gray-900 bg-gray-50 rounded-lg py-2.5"
               onClick={() => setMenuOpen(false)}
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="text-sm text-gray-700 hover:text-gray-900 py-1"
+              className="w-full text-center text-sm text-gray-700 hover:text-gray-900 bg-gray-50 rounded-lg py-2.5"
               onClick={() => setMenuOpen(false)}
             >
               Contact
             </Link>
             <Link
               href="/submit"
-              className="flex items-center justify-center gap-1.5 bg-gray-900 text-white text-sm px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium text-center"
+              className="w-full flex items-center justify-center gap-1.5 bg-gray-900 text-white text-sm px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors font-medium text-center"
               onClick={() => setMenuOpen(false)}
             >
               <Plus className="w-4 h-4" strokeWidth={2.5} />

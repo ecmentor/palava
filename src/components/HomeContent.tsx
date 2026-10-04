@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Listing, Banner } from '@/types';
 import ServiceBanner from './ServiceBanner';
 import ListingGrid from './ListingGrid';
-import { ShoppingBag, Wrench } from 'lucide-react';
+import { ShoppingBag, Handshake } from 'lucide-react';
 
 interface Props {
   items: Listing[]; // everything except "services" category
@@ -29,9 +29,8 @@ export default function HomeContent({ items, services, banners }: Props) {
               : 'text-gray-500 hover:text-gray-700'
           }`}
         >
-          <Wrench className="w-4 h-4" strokeWidth={2} />
+          <Handshake className="w-4 h-4" strokeWidth={2} />
           Services
-          <span className="text-xs font-normal opacity-60">({services.length})</span>
         </button>
         <button
           onClick={() => setMode('buy-sell')}
@@ -43,7 +42,6 @@ export default function HomeContent({ items, services, banners }: Props) {
         >
           <ShoppingBag className="w-4 h-4" strokeWidth={2} />
           Buy &amp; Sell
-          <span className="text-xs font-normal opacity-60">({items.length})</span>
         </button>
       </div>
 
